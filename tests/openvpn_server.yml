@@ -75,6 +75,7 @@
         user_as_cn: true
         user_cn_strict: true
         push_options: ['block-outside-dns', 'register-dns']
+        redirect_gw: ['block-local', 'bypass-dhcp', 'bypass-dns']
         mtu: 1400
       register: opn9
       failed_when: >
@@ -97,6 +98,7 @@
         user_as_cn: true
         user_cn_strict: true
         push_options: ['block-outside-dns', 'register-dns']
+        redirect_gw: ['block-local', 'bypass-dhcp', 'bypass-dns']
         mtu: 1400
         enabled: false
       register: opn2
@@ -121,6 +123,7 @@
         user_as_cn: true
         user_cn_strict: true
         push_options: ['block-outside-dns', 'register-dns']
+        redirect_gw: ['block-local', 'bypass-dhcp', 'bypass-dns']
         mtu: 1400
         enabled: false
       register: opn3
