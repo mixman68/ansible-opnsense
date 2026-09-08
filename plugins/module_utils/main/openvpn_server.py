@@ -98,6 +98,9 @@ class Server(BaseModule):
     }
     EXIST_ATTR = 'instance'
     FIELDS_DIFF_EXCLUDE = ['vpnid', 'role']
+    FIELDS_VALUE_MAPPING = {
+        'mode': {'dco': 'ovpn'},
+    }
 
     def __init__(self, module: AnsibleModule, result: dict, session: Session = None, fail: dict = None):
         BaseModule.__init__(self=self, m=module, r=result, s=session, f=fail)
